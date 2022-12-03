@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  #become: yes
+  gather_facts: no
+
+  tasks:
+    - name: list tmp dir
+      shell: ls -l /tmp >> /tmp/listatmp.txt
+
+    - name: list var dir
+      shell: cat /tmp/listavar.txt
