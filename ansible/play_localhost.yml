@@ -10,4 +10,3 @@
       ansible.builtin.stat:
         path: /tmp/listatmp.txt
       register: sym
-

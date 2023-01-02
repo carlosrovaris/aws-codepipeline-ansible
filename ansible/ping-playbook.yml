@@ -1,0 +1,19 @@
+---
+- name: WebCluster them all
+  hosts: cluster_dir_Name_WebClusterTF
+  gather_facts: no
+
+  tasks:
+    - name: Install httpd
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start and enable httpd server
+      systemd:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Create Hello World in httpd
+      shell: echo "Hello World" > /var/www/html/index.html
