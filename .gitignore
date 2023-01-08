@@ -1,1 +1,8 @@
 terraform/
+terraform/plano
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/modules/ansible/
+terraform/modules/infra/
+terraform/modules/codepipeline/
+terraform/terraform.tfstate*
