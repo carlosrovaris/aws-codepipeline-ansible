@@ -1,3 +1,4 @@
+terraform/
 terraform/plano
 terraform/.terraform/
 terraform/.terraform.lock.hcl
