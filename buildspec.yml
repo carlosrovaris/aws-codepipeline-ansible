@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands: 
+      - echo "installing something" 
+  pre_build:
+    commands: 
+      - echo "installing something 2" 
+  build:
+    commands: 
+      - echo "installing something 3" 
+  post_build:
+    commands: 
+      - echo "installing something 4" 
